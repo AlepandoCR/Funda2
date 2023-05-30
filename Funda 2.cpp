@@ -5,7 +5,7 @@
 int main()
 {
     Viajes viajeActual;
-    float kilometros, gasolina;
+    float kilometros = 0.0, gasolina = 0.0;
     int horaInicio, minsInicio, horaFin, minsFin, dia, menu = 0,viaje = 0;
     string Origen, Destino;
     while (menu != 9) {
@@ -32,10 +32,7 @@ int main()
             cout << "Ingrese la cantidad de kilometros: ";
             cin >> kilometros;
             system("cls");
-            cout << "(Dia: " << dia + 1 << "  Viaje: " << viaje + 1 << "/10)";
-            cout << "Ingrese la cantidad de Gasolina: ";
-            cin >> gasolina;
-            system("cls");
+            gasolina = kilometros/5;
             cout << "(Dia: " << dia + 1 << "  Viaje: " << viaje + 1 << "/10)";
             cout << "Ingrese la hora de inicio (sin minutos y en formato 24 horas): ";
             cin >> horaInicio;
